@@ -1,0 +1,81 @@
+.grid
+    display: flex
+    &--about
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        &:first-child
+            .grid__item
+                &:nth-child(2)
+                    margin-top: 75px
+                    padding-left: 90px
+                    .title
+                        span
+                            &:first-child
+                                color: $pink
+        &:nth-child(2)
+            margin-top: 60px
+            .grid__item
+                &:nth-child(1)
+                    .title
+                        position: relative
+                        max-width: 500px
+                        padding: 25px 0 40px 50px
+                        font-size: 28px
+                        line-height: 48px
+                        color: $text_main
+                        &:before
+                            content: ""
+                            position: absolute
+                            top: 0
+                            left: 0
+                            display: block
+                            width: 130px
+                            height: 130px
+                            border: 15px solid $border_color
+                            z-index: -1
+                    .info
+                        padding-left: 50px 
+                    .image
+                        margin-top: 40px
+                        padding-left: 50px
+
+                        
+        
+        .grid__block
+            &--text
+                .title
+                    font-family: $font_title
+                    font-size: 48px
+                    font-weight: 900
+                .info
+                    p
+                        margin-top: 40px
+                        font-size: 18px
+                        line-height: 28px
+                        &:last-child
+                            &:after
+                                content: ""
+                                display: block
+                                width: 75px
+                                height: 2px
+                                margin-top: 40px
+                                background-color: $pink
+    &--certificates
+        .grid__item
+            display: flex
+            &:nth-child(2)
+                align-items: flex-end
+            .grid__block
+                &--info
+                    padding-left: 75px
+                    .title
+                        margin-bottom: 40px
+                        font-family: $font_title
+                        font-size: 48px
+                        font-weight: 900
+                        span
+                            display: block
+                            line-height: 60px
+                            &:first-child
+                                color: $pink

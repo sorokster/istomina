@@ -1,0 +1,33 @@
+.before-after
+    padding-bottom: 50px
+    .item
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        &__block
+            position: relative
+            width: calc( 50% - 20px )
+            &:after
+                content: ""
+                display: block
+                padding-top: calc( 60% + 40px )
+            .picture
+                position: absolute
+                top: 40px
+                left: 0
+                width: 100%
+                height: calc( 100% - 40px )
+                background-color: transparent
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: cover
+
+            .title
+                font-family: $font_title
+                font-size:  28px
+                font-weight: 900
+                color: $pink
+                text-align: center
+                text-transform: uppercase
+                margin-bottom: 15px

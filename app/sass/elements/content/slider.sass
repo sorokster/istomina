@@ -1,0 +1,84 @@
+.slider
+    &--action
+    
+        .item
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            align-items: center
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+            height: 676px
+
+            &__action
+                width: 100%
+                max-width: 500px
+                margin-bottom: 25px
+                margin-right: 50px
+                padding: 40px
+                background-color: white
+                .description
+                    span
+                        &:first-child
+                            font-size: 18px
+                            color: $text_main
+                        &:nth-child(2)
+                            font-family: $font_title
+                            font-size: 24px
+                            font-weight: 900
+                            text-transform: lowercase
+                            color: $pink
+                .link
+                    margin-top: 25px
+                    padding: 0 22px 0 0
+                    font-size: 16px
+                    font-weight: bold
+                    color: $text_main
+                    border: 0
+                    outline: none
+                    cursor: pointer
+                    background: transparent url('../images/icons/arrow-right.png') no-repeat center right
+                    background-size: 16px
+
+.owl-navigation
+    text-align: center
+    margin-top: 25px
+    button
+        width: 20px
+        height: 20px
+        margin: 0 5px
+        border: 0
+        -webkit-border-radius: 100%
+        -moz-border-radius: 100%
+        border-radius: 100%
+        outline: none
+        cursor: pointer
+        background: #e8e8e8
+        &.active
+            background: $pink
+.owl-dots
+    width: 100%
+    position: absolute
+    bottom: 15px
+    text-align: center
+    button
+        width: 20px
+        height: 20px
+        margin: 0 5px
+        border: 0
+        -webkit-border-radius: 100%
+        -moz-border-radius: 100%
+        border-radius: 100%
+        outline: none
+        cursor: pointer
+        background: white!important
+        &.active
+            background: $pink!important
+.before-after
+    .owl-dots
+        bottom: -50px
+        button
+            background: #e8e8e8!important
+            &.active
+                background: $pink!important

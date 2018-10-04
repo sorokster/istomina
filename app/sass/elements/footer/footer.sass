@@ -1,0 +1,26 @@
+.footer
+    display: flex
+    align-items: center
+    min-height: 60px
+    background-color: #474847
+    padding-bottom: 25px
+    .list
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        &__item
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            width: calc( 33% - 10px )
+            &:last-child
+                display: none
+        &__link
+            font-family: $font_main
+            font-size: 16px
+            color: white
+        &__icon
+            margin-right: 5px
+        

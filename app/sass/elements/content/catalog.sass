@@ -1,0 +1,70 @@
+.catalog
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    max-width: 1024px
+    margin: 75px auto 0
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: calc( 33.33% - 25px )
+        margin-top: 25px
+        padding: 10px
+        text-align: center
+        border: 1px solid #e8e8e8
+        background-color: white
+        .picture
+            max-height: 284px
+            img
+                max-height: 284px
+        .title
+            margin-top: 15px
+            font-size: 20px
+            font-weight: bold
+
+        .description
+            display: flex
+            flex-direction: column
+            align-items: center
+            min-height: 81px
+            margin: 10px 0
+            &:after
+                content: ""
+                display: block
+                width: 40px
+                height: 3px
+                margin: 15px auto
+                background-color: $pink
+
+        .price
+            margin-top: 0
+            margin-bottom: 15px
+            span
+                color: $pink
+                &:first-child
+                    font-size: 36px
+                    font-weight: bold
+
+        .link
+            width: 100%
+            padding: 10px
+            color: white
+            background-color: $pink
+            cursor: pointer
+    &__link
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        margin-top: 25px
+        a
+            font-size: 20px
+            font-weight: bold
+            padding: 10px 40px
+            color: white
+            background-color: $pink

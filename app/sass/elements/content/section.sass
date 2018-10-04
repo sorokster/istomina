@@ -1,0 +1,59 @@
+.section
+    position: relative
+    &--quote
+        margin-top: 75px
+    &--about
+        margin-top: 50px
+    &--certificates
+        margin-top: 75px
+    &--services
+        margin-top: 75px
+    &--brands
+        margin-top: 75px
+    &--action
+        margin-top: 50px
+    &--join
+        margin-top: 50px
+    &--testimonials
+        margin-top: 125px
+    &--prices
+        margin-top: 150px
+    &--contact
+        margin-top: 100px
+    &--catalog
+        margin-top: 100px
+    &--map
+        margin-top: 50px
+    &--enroll2
+        margin-top: 75px
+
+    &__title
+        position: relative
+        font-family: $font_title
+        font-size: 36px
+        font-weight: 900
+        text-align: center
+        text-transform: uppercase
+        &--border
+            &:after
+                content: ""
+                position: absolute
+                top: 50%
+                left: 50%
+                display: block
+                width: 130px
+                height: 130px
+                border: 15px solid #e8e8e8
+                z-index: -1
+                -webkit-transform: translate(-50%, -50%)
+                -moz-transform: translate(-50%, -50%)
+                transform: translate(-50%, -50%)
+        
+        &--white
+            color: white
+
+        span
+            display: block
+            padding: 10px 0
+            &:nth-child(2)
+                color: $pink

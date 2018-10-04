@@ -1,0 +1,24 @@
+.quote
+    max-width: 750px
+    margin: 0 auto
+    text-align: right
+    &__text
+        font-family: $font_title
+        font-size: 28px
+        font-weight: 900
+        text-align: left
+        line-height: 48px
+        color: $text_main
+    &__name
+        position: relative
+        text-align: right
+        text-transform: uppercase
+        &:before
+            content: ""
+            position: absolute
+            top: calc( 50% - 1px )
+            left: -25px
+            width: 20px
+            height: 2px
+            background-color: $pink
+

@@ -1,0 +1,147 @@
+.services
+    &__block
+        position: relative
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        width: 100%
+        background: transparent url('../images/4.jpg') no-repeat top left
+        background-size: cover
+    &__content
+        padding-top: 60px
+        padding-left: 350px
+        padding-bottom: 160px
+        .title
+            font-size: 48px
+            color: white
+        .subtitle
+            margin-top: 10px
+            font-size: 28px
+            color: white
+        .link
+            position: absolute
+            left: calc( 50% - 140px )
+            bottom: 50px
+            display: block
+            width: 100%
+            max-width: 280px
+            padding: 10px 20px
+            font-size: 16px
+            font-weight: bold
+            text-align: center
+            text-transform: uppercase
+            color: white
+            border: 1px solid white
+            cursor: pointer
+            background-color: transparent
+            outline: none
+            -webkit-transition: all .3s ease-in-out
+            -moz-transition: all .3s ease-in-out
+            transition: all .3s ease-in-out
+            &:hover
+                border-color: $pink
+                background-color: $pink
+
+    &__picture
+        max-width: 370px
+        img
+            width: 100%
+    &__list
+        display: flex
+        flex-direction: column
+        margin-top: 10px
+        .item
+            position: relative
+            margin-top: 10px
+            padding-left: 20px
+            color: white
+            &:before
+                content: ""
+                position: absolute
+                top: 2px
+                left: 0
+                display: block
+                width: 5px
+                height: 5px
+                border: 4px solid #F6D1D3
+                -webkit-border-radius: 100%
+                -moz-border-radius: 100%
+                border-radius: 100%
+                background-color: #ECA4A7
+
+    .list
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        &__item
+            width: calc( (100% / 3) - 2px )
+            margin-top: 4px
+            background-color: transparent
+            background-position: top center
+            background-size: cover
+            background-repeat: no-repeat
+            height: auto
+            &:before
+                content: ""
+                float: left
+                padding-top: 100%
+            &:nth-child(1)
+                background-image: url('../images/products/1.png')
+            &:nth-child(2)
+                background-image: url('../images/products/2.png')
+            &:nth-child(3)
+                background-image: url('../images/products/3.png')
+            &:nth-child(4)
+                background-image: url('../images/products/4.png')
+            &:nth-child(5)
+                background-image: url('../images/products/5.png')
+            &:nth-child(6)
+                background-image: url('../images/products/6.jpg')
+            .content
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                width: 100%
+                height: 100%
+                padding: 20px 30px
+            .title
+                margin-bottom: 10px
+                font-size: 36px
+                color: white
+            .description
+                min-height: 60px
+                font-size: 16px
+                line-height: 20px
+                color: white
+                &:after
+                    content: ""
+                    display: block
+                    width: 70px
+                    height: 4px
+                    margin-top: 15px
+                    background-color: white
+
+            .price
+                margin: 10px 0
+                font-size: 30px
+                font-weight: bold
+                color: $pink
+            .link
+                padding: 10px 20px
+                font-size: 16px
+                font-weight: bold
+                text-align: center
+                text-transform: uppercase
+                color: white
+                border: 1px solid white
+                cursor: pointer
+                background-color: transparent
+                outline: none
+                -webkit-transition: all .3s ease-in-out
+                -moz-transition: all .3s ease-in-out
+                transition: all .3s ease-in-out
+                &:hover
+                    border-color: $pink
+                    background-color: $pink
